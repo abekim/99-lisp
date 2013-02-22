@@ -22,9 +22,11 @@
 (define (factorial-new n)
   (fact-iter n 1))
 
+(factorial-new 2)
+
 ;what does (lambda (f) (f 5)) do?
 
-;((lambda (f) (f 5)) (lambda (f) (* f 2)))
+((lambda (f) (f 5)) (lambda (f) (* f 2)))
 
 ;it takes in an operation with one parameter as an argument and runs it
 ;Add the #s in a list
